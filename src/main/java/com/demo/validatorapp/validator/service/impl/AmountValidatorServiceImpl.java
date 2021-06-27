@@ -1,10 +1,10 @@
-package com.demo.validatorapp.service.impl;
+package com.demo.validatorapp.validator.service.impl;
 
 
-import com.demo.validatorapp.controller.dto.AmountDTO;
-import com.demo.validatorapp.service.AmountValidatorService;
-import com.demo.validatorapp.service.enums.CurrencyEnum;
-import com.demo.validatorapp.service.exceptions.TypeException;
+import com.demo.validatorapp.validator.controller.dto.AmountDTO;
+import com.demo.validatorapp.validator.service.AmountValidatorService;
+import com.demo.validatorapp.validator.service.enums.CurrencyEnum;
+import com.demo.validatorapp.validator.service.exceptions.TypeException;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 

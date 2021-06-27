@@ -1,14 +1,14 @@
-package com.demo.validatorapp.controller;
+package com.demo.validatorapp.validator.controller;
 
-import com.demo.validatorapp.controller.dto.AmountDTO;
-import com.demo.validatorapp.controller.dto.IdentificationDocumentDTO;
-import com.demo.validatorapp.controller.dto.odto.ErrorResponse;
-import com.demo.validatorapp.controller.dto.odto.ValidationResponse;
-import com.demo.validatorapp.service.AmountValidatorService;
-import com.demo.validatorapp.service.IdentificationValidatorService;
-import com.demo.validatorapp.service.UserDataValidatorService;
-import com.demo.validatorapp.service.exceptions.FormatException;
-import com.demo.validatorapp.service.exceptions.TypeException;
+import com.demo.validatorapp.validator.controller.dto.AmountDTO;
+import com.demo.validatorapp.validator.controller.dto.IdentificationDocumentDTO;
+import com.demo.validatorapp.validator.controller.dto.odto.ErrorResponse;
+import com.demo.validatorapp.validator.controller.dto.odto.ValidationResponse;
+import com.demo.validatorapp.validator.service.AmountValidatorService;
+import com.demo.validatorapp.validator.service.IdentificationValidatorService;
+import com.demo.validatorapp.validator.service.UserDataValidatorService;
+import com.demo.validatorapp.validator.service.exceptions.FormatException;
+import com.demo.validatorapp.validator.service.exceptions.TypeException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

@@ -1,1 +1,8 @@
+user:
+  username: 'demo'
+  password: 'admin.123'
+token:
+  rol: 'ROL_USER'
+  secretKey: 'validator'
+  expiration: 6000000
 

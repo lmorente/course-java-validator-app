@@ -1,4 +1,4 @@
-package com.demo.validatorapp.service;
+package com.demo.validatorapp.validator.service;
 
 public interface UserDataValidatorService {
 

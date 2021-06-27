@@ -1,7 +1,7 @@
-package com.demo.validatorapp.controller.dto;
+package com.demo.validatorapp.validator.controller.dto;
 
 
-import com.demo.validatorapp.service.enums.IdentificationTypeEnum;
+import com.demo.validatorapp.validator.service.enums.IdentificationTypeEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

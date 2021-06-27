@@ -1,6 +1,6 @@
-package com.demo.validatorapp.service.impl;
+package com.demo.validatorapp.validator.service.impl;
 
-import com.demo.validatorapp.service.UserDataValidatorService;
+import com.demo.validatorapp.validator.service.UserDataValidatorService;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
