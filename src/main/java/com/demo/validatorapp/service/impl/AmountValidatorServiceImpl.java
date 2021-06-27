@@ -3,14 +3,13 @@ package com.demo.validatorapp.service.impl;
 
 import com.demo.validatorapp.controller.dto.AmountDTO;
 import com.demo.validatorapp.service.AmountValidatorService;
-import com.demo.validatorapp.service.dto.CurrencyDictionary;
+import com.demo.validatorapp.service.enums.CurrencyEnum;
 import com.demo.validatorapp.service.exceptions.TypeException;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
 import java.math.BigDecimal;
-import java.util.Map;
-import java.util.Objects;
+
 
 
 @Service
@@ -18,15 +17,15 @@ public class AmountValidatorServiceImpl implements AmountValidatorService {
 
     @Override
     public Boolean validate(AmountDTO amount) throws TypeException {
-        CurrencyDictionary currency = new CurrencyDictionary();
-        Map<String, CurrencyDictionary> dictionary = currency.readData();
+        CurrencyEnum currency = CurrencyEnum.valueOf(amount.getType());
 
-        if (ObjectUtils.isEmpty(amount.getType()) || Objects.isNull(dictionary.get(amount.getType()))){
-                throw new TypeException("Currency not found");
-        }
-        if (ObjectUtils.isEmpty(amount.getValue()) || amount.getValue().compareTo(BigDecimal.ZERO) < 0){
+        if (ObjectUtils.isEmpty(currency)){
+            throw new TypeException("Currency not found");
+        } else if (ObjectUtils.isEmpty(amount.getValue()) ||
+                amount.getValue().compareTo(BigDecimal.ZERO) < 0){
             return Boolean.FALSE;
         }
+
         return Boolean.TRUE;
     }
 }
