@@ -25,13 +25,13 @@ import java.util.Objects;
 public class ValidatorController {
 
     @Autowired
-    IdentificationValidatorService identificationValidatorService;
+    private IdentificationValidatorService identificationValidatorService;
 
     @Autowired
-    UserDataValidatorService userDataValidatorService;
+    private UserDataValidatorService userDataValidatorService;
 
     @Autowired
-    AmountValidatorService amountValidatorService;
+    private AmountValidatorService amountValidatorService;
 
 
     private static final String MESSAGE_EMPTY_FIELDS = "Fill in all the fields";
