@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class AmountDTO {
 
-    String type;
+    private String type;
 
-    BigDecimal value;
+    private BigDecimal value;
 }

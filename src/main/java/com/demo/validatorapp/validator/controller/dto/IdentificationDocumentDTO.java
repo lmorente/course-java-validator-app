@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class IdentificationDocumentDTO {
 
-    IdentificationTypeEnum type;
+    private IdentificationTypeEnum type;
 
-    String value;
+    private String value;
 }

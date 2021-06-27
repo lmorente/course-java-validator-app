@@ -7,5 +7,5 @@ import lombok.Data;
 @AllArgsConstructor
 public class ValidationResponse {
 
-    Boolean validation;
+    private Boolean validation;
 }
