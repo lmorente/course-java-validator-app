@@ -1,4 +1,4 @@
-package com.demo.validatorapp.service.exceptions;
+package com.demo.validatorapp.validator.service.exceptions;
 
 public class TypeException extends Exception{
 

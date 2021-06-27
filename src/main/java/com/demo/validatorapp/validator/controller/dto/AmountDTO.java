@@ -1,4 +1,4 @@
-package com.demo.validatorapp.controller.dto;
+package com.demo.validatorapp.validator.controller.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

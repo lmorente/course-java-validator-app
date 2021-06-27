@@ -1,10 +1,10 @@
-package com.demo.validatorapp.service.impl;
+package com.demo.validatorapp.validator.service.impl;
 
 
-import com.demo.validatorapp.controller.dto.IdentificationDocumentDTO;
-import com.demo.validatorapp.service.IdentificationValidatorService;
-import com.demo.validatorapp.service.exceptions.FormatException;
-import com.demo.validatorapp.service.exceptions.TypeException;
+import com.demo.validatorapp.validator.controller.dto.IdentificationDocumentDTO;
+import com.demo.validatorapp.validator.service.IdentificationValidatorService;
+import com.demo.validatorapp.validator.service.exceptions.FormatException;
+import com.demo.validatorapp.validator.service.exceptions.TypeException;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 

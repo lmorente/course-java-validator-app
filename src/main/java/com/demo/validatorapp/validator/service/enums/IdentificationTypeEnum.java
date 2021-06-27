@@ -1,4 +1,4 @@
-package com.demo.validatorapp.service.enums;
+package com.demo.validatorapp.validator.service.enums;
 
 public enum IdentificationTypeEnum {
     NIF("nif"), NIE("nie"), CIF("cif");

@@ -1,8 +1,8 @@
-package com.demo.validatorapp.service;
+package com.demo.validatorapp.validator.service;
 
 
-import com.demo.validatorapp.controller.dto.AmountDTO;
-import com.demo.validatorapp.service.exceptions.TypeException;
+import com.demo.validatorapp.validator.controller.dto.AmountDTO;
+import com.demo.validatorapp.validator.service.exceptions.TypeException;
 
 public interface AmountValidatorService {
 
